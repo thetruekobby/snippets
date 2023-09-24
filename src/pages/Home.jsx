@@ -1,7 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { useUpdateTitle } from '../hooks/useUpdateTitle'
 
 const Home = () => {
+ 
+
   const snippets = [{ name: "tab" }]
 
   return (
