@@ -4,8 +4,94 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
 
+/* apply background color when toogle is on */
+#toggle-label:has(input:checked) {
+  @apply bg-green-400;
+}
+
+#cardRef {
+  position: relative;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+#cardRef.flipped {
+  transform: rotateY(180deg);
+}
+#cardRef > div {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+#cardRef .back {
+  transform: rotateY(180deg);
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateY(0px);
+  }
+  11% {
+    transform: translateY(0px);
+  }
+  22% {
+    transform: translateY(-24px);
+  }
+  33% {
+    transform: translateY(-24px);
+  }
+  44% {
+    transform: translateY(-48px);
+  }
+  55% {
+    transform: translateY(-48px);
+  }
+  66% {
+    transform: translateY(-72px);
+  }
+  77% {
+    transform: translateY(-72px);
+  }
+  88% {
+    transform: translateY(-96px);
+  }
+  100% {
+    transform: translateY(-96px);
+  }
+}
+
+.scrolling-container {
+  animation: scrolling 5s ease infinite;
 }
 
 
+#closed-eyes {
+  background: #222;
+  text-align: center;
+}
 
+#closed-eyes form {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
+#closed-eyes input {
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.4em;
+  margin: 10px auto;
+}
+#closed-eyes form img {
+  width: 200px; 
+  margin: 0 auto;
+}

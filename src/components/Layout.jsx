@@ -1,9 +1,6 @@
-import { useEffect } from "react"
-import { Link, Outlet, useLocation } from "react-router-dom"
-import { useUpdateTitle } from "../hooks/useUpdateTitle"
+import { Link, Outlet } from "react-router-dom"
 
 const Layout = () => {
- 
   return (
     <>
       <h1 className="font-bold text-2xl my-5 border-b-2 px-5 ">
