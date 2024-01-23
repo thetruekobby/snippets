@@ -1,7 +1,6 @@
 import { useRef } from "react"
 
-const x = this
-console.log("🚀 ~ file: Flashcard.jsx:3 ~ x:", x)
+
 const Flashcard = () => {
   const cardRef = useRef()
   return (

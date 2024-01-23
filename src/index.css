@@ -95,3 +95,22 @@
   width: 200px; 
   margin: 0 auto;
 }
+
+
+/* floating-label styles */
+.floating-input {
+  @apply absolute inset-0 px-2 bg-transparent;
+}
+
+.floating-label {
+  @apply absolute capitalize top-1/2 left-2 -translate-y-1/2 bg-white px-2 transition-all;
+}
+
+.floating-input:focus + label,
+.floating-input:not(:empty) + label {
+  @apply top-0 text-sm
+}
+
+.hover-effect span:has(~span:hover){
+  @apply text-yellow-500
+}

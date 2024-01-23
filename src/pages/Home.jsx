@@ -9,6 +9,8 @@ const Home = () => {
     { name: "scrolling-words" },
     { name: "closed-eyes-pass-field" },
     { name: "live-input-feedback" },
+    { name: "floating-label" },
+    { name: "hover-effect" },
   ]
 
   return (
