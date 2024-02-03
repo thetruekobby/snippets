@@ -11,6 +11,12 @@ const Home = () => {
     { name: "live-input-feedback" },
     { name: "floating-label" },
     { name: "hover-effect" },
+    { name: "form-stepper" },
+    { name: "animating-gradient" },
+    { name: "carousel" },
+    { name: "parallax-scroll" },
+    { name: "stacking-context" },
+    { name: "test" },
   ]
 
   return (

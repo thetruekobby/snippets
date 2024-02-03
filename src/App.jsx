@@ -12,6 +12,11 @@ import LiveFeedback from "./pages/LiveFeedback"
 import Test from "./Test"
 import FloatingLabel from "./pages/FloatingLabel"
 import HoverEffect from "./pages/HoverEffect"
+import FormStepper from "./pages/FormStepper"
+import AnimatingGradient from "./pages/AnimatingGradient"
+import Carousel from "./pages/Carousel"
+import ParallaxScroll from "./pages/ParallaxScroll"
+import StackingContext from "./pages/StackingContext"
 
 function App() {
   const { pathname } = useLocation()
@@ -31,6 +36,11 @@ function App() {
         <Route path="live-input-feedback" element={<LiveFeedback />} />
         <Route path="floating-label" element={<FloatingLabel />} />
         <Route path="hover-effect" element={<HoverEffect />} />
+        <Route path="form-stepper" element={<FormStepper />} />
+        <Route path="animating-gradient" element={<AnimatingGradient />} />
+        <Route path="carousel" element={<Carousel />} />
+        <Route path="parallax-scroll" element={<ParallaxScroll />} />
+        <Route path="stacking-context" element={<StackingContext />} />
         <Route path="test" element={<Test />} />
       </Route>
     </Routes>
