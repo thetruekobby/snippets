@@ -16,6 +16,7 @@ const Home = () => {
     { name: "carousel" },
     { name: "parallax-scroll" },
     { name: "stacking-context" },
+    { name: "animate-height" },
     { name: "test" },
   ]
 

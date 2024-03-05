@@ -17,6 +17,7 @@ import AnimatingGradient from "./pages/AnimatingGradient"
 import Carousel from "./pages/Carousel"
 import ParallaxScroll from "./pages/ParallaxScroll"
 import StackingContext from "./pages/StackingContext"
+import AnimateHeight from "./pages/AnimateHeight"
 
 function App() {
   const { pathname } = useLocation()
@@ -41,6 +42,7 @@ function App() {
         <Route path="carousel" element={<Carousel />} />
         <Route path="parallax-scroll" element={<ParallaxScroll />} />
         <Route path="stacking-context" element={<StackingContext />} />
+        <Route path="animate-height" element={<AnimateHeight />} />
         <Route path="test" element={<Test />} />
       </Route>
     </Routes>
