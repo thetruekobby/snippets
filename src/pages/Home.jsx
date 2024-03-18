@@ -18,6 +18,7 @@ const Home = () => {
     { name: "stacking-context" },
     { name: "animate-height" },
     { name: "test" },
+    { name: "params/176?q=hello" },
   ]
 
   return (
