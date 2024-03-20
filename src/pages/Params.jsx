@@ -24,6 +24,7 @@ const Params = () => {
           // function version of setSearchParams
           //   setSearchParams((prev) => {
           //     prev.set("q", inputValue)
+          //     return prev
           //   })
         }}
       >
