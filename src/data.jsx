@@ -17,6 +17,7 @@ import ParallaxScroll from "./pages/ParallaxScroll"
 import AnimateHeight from "./pages/AnimateHeight"
 import Params from "./pages/Params"
 import CircularProgressBar from "./pages/CircularProgressBar"
+import DirectionAware from "./pages/DirectionAware"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -37,6 +38,7 @@ export const routes = [
   { name: "animate-height", component: <AnimateHeight /> },
   { name: "params/176?q=hello", component: <Params /> },
   { name: "circular-progress-bar", component: <CircularProgressBar /> },
+  { name: "direction-aware", component: <DirectionAware /> },
   { name: "test", component: <Test /> },
 ]
 
