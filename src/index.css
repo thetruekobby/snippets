@@ -2,21 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: white;
-    background-color: #000;
-  }
-}
-
-:root[data-theme="dark"] {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: green;
 }
-:root[data-theme="light"] {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #fff;
-}
+
+
 /* apply background color when toogle is on */
 #toggle-label:has(input:checked) {
   @apply bg-green-400;
