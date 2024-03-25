@@ -25,9 +25,6 @@ const DirectionAware = () => {
         className="relative bg-gray-200 rounded-full px-4 py-2 w-[100px] h-[30px] overflow-hidden"
       >
         <span
-          //   onMouseMove={(e) => {
-          //     e.preventDefault()
-          //   }}
           ref={ripple}
           className={`${
             showRipple ? "opacity-100 scale-[50]" : "opacity-0"
