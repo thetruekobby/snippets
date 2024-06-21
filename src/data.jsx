@@ -18,6 +18,7 @@ import AnimateHeight from "./pages/AnimateHeight"
 import Params from "./pages/Params"
 import CircularProgressBar from "./pages/CircularProgressBar"
 import DirectionAware from "./pages/DirectionAware"
+import AnimateDisplayBlock from "./pages/AnimateDisplayBlock"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -39,6 +40,7 @@ export const routes = [
   { name: "params/176?q=hello", component: <Params /> },
   { name: "circular-progress-bar", component: <CircularProgressBar /> },
   { name: "direction-aware", component: <DirectionAware /> },
+  { name: "animate-display-block", component: <AnimateDisplayBlock /> },
   { name: "test", component: <Test /> },
 ]
 

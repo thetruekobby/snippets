@@ -1,0 +1,18 @@
+@keyframes swipe {
+  from {
+    transform: translateX(300px);
+  }
+ /*  to {
+    transform: translateX(0px);
+  } */
+}
+
+.swiper {
+  animation: swipe 2s;
+}
+
+
+dialog::backdrop {
+  pointer-events: none !important;
+  background-color:rgba(255, 0, 0, 0.298);
+}
