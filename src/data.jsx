@@ -19,6 +19,7 @@ import Params from "./pages/Params"
 import CircularProgressBar from "./pages/CircularProgressBar"
 import DirectionAware from "./pages/DirectionAware"
 import AnimateDisplayBlock from "./pages/AnimateDisplayBlock"
+import ParentComponent from "./pages/PropsToParents"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -41,6 +42,7 @@ export const routes = [
   { name: "circular-progress-bar", component: <CircularProgressBar /> },
   { name: "direction-aware", component: <DirectionAware /> },
   { name: "animate-display-block", component: <AnimateDisplayBlock /> },
+  { name: "props-to-parents", component: <ParentComponent /> },
   { name: "test", component: <Test /> },
 ]
 
