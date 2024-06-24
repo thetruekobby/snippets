@@ -21,7 +21,7 @@ const Params = () => {
         className="text-white bg-slate-800 p-2"
         onClick={() => {
           setSearchParams({ q: inputValue })
-          // function version of setSearchParams
+          // function version of setSearchParams to access existing search params
           //   setSearchParams((prev) => {
           //     prev.set("q", inputValue)
           //     return prev

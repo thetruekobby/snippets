@@ -31,4 +31,14 @@ const checkCookie = (name) => {
      binaryString += String.fromCharCode(binaryArray[i])
    }
    return binaryString
- }
+}
+ 
+
+const searchFuncc = (data, val, paramArr) => {
+  //where paramArr is an array of fields to search in
+  return data.filter((item) =>
+    paramArr.some(
+      (param) => item[param] && item[param].toString().toLowerCase().includes(val.toLowerCase())
+    )
+  )
+}

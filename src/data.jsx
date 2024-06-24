@@ -20,6 +20,7 @@ import CircularProgressBar from "./pages/CircularProgressBar"
 import DirectionAware from "./pages/DirectionAware"
 import AnimateDisplayBlock from "./pages/AnimateDisplayBlock"
 import ParentComponent from "./pages/PropsToParents"
+import Debouncing from "./pages/Debouncing"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -43,6 +44,7 @@ export const routes = [
   { name: "direction-aware", component: <DirectionAware /> },
   { name: "animate-display-block", component: <AnimateDisplayBlock /> },
   { name: "props-to-parents", component: <ParentComponent /> },
+  { name: "debouncing", component: <Debouncing /> },
   { name: "test", component: <Test /> },
 ]
 
