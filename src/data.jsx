@@ -7,7 +7,7 @@ import Flashcard from "./pages/Flashcard"
 import ScrollingWords from "./pages/ScrollingWords"
 import ClosedEyes from "./pages/ClosedEyes"
 import LiveFeedback from "./pages/LiveFeedback"
-import Test from "./Test"
+// import Test from "./Test"
 import FloatingLabel from "./pages/FloatingLabel"
 import HoverEffect from "./pages/HoverEffect"
 import FormStepper from "./pages/FormStepper"
@@ -21,6 +21,7 @@ import DirectionAware from "./pages/DirectionAware"
 import AnimateDisplayBlock from "./pages/AnimateDisplayBlock"
 import ParentComponent from "./pages/PropsToParents"
 import Debouncing from "./pages/Debouncing"
+import SnappingCards from "./pages/SnappingCards"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -45,7 +46,8 @@ export const routes = [
   { name: "animate-display-block", component: <AnimateDisplayBlock /> },
   { name: "props-to-parents", component: <ParentComponent /> },
   { name: "debouncing", component: <Debouncing /> },
-  { name: "test", component: <Test /> },
+  { name: "snapping-cards", component: <SnappingCards /> },
+  // { name: "test", component: <Test /> },
 ]
 
 export const routeLinks = routes
