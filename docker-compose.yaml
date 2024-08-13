@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  # does not have to be the same name as project
+  snippets:
+    #path to the dockerfile
+    build: .
+    # name of the image, with or without the version(tag)
+    image: snippets:1.0
+    container_name: snipp_1
+    # port mapping || host port : exposed container port
+    ports:
+      - 3001:3001
+    #map local folder to container folder to sync files
+    #relative path to local folder : container path
+    volumes:
+      - .: /app
+      # this maps the node_modules folder in the container to a special folder in the docker environment therefore it will not be synced with local folder
+      - /app/node_modules
