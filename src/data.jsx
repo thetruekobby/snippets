@@ -51,6 +51,7 @@ export const routes = [
   { name: "snapping-cards", component: <SnappingCards /> },
   { name: "grid", component: <Grid /> },
   { name: "webRTC", component: <WebRTC /> },
+  { name: "new webRTC", component: <new /> },
   { name: "test", component: <Test /> },
 ]
 

@@ -11,12 +11,7 @@ const Test = () => {
         count is {count}
       </button>
       <Child name={"Gideon"} />
-      more changes
-      commit 1
-      commit 2
-      commit 3
-      commit 4
-      commit 5
+      more changes commit 1 commit 2 commit 3 commit 4 commit 5
     </>
   )
 }
