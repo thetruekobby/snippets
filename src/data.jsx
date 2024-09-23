@@ -24,6 +24,9 @@ import SnappingCards from "./pages/SnappingCards"
 import Grid from "./pages/Grid"
 import WebRTC from "./pages/WebRTC"
 import Test from "./Test"
+import NewWebRTC from "./pages/newWebRTC"
+import HookForm from "./pages/HookForm"
+import Portal from "./pages/Portal"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -51,10 +54,10 @@ export const routes = [
   { name: "snapping-cards", component: <SnappingCards /> },
   { name: "grid", component: <Grid /> },
   { name: "webRTC", component: <WebRTC /> },
-  { name: "new webRTC", component: <new /> },
+  { name: "new webRTC", component: <NewWebRTC /> },
+  { name: "React hook form", component: <HookForm /> },
+  { name: "Portal", component: <Portal /> },
   { name: "test", component: <Test /> },
 ]
 
-export const routeLinks = routes
-  .map((route) => route.name)
-  .filter((route) => route !== "/")
+export const routeLinks = routes.map((route) => route.name).filter((route) => route !== "/")

@@ -32,7 +32,7 @@ const AnimateDisplayBlock = () => {
             dialogRef.current.close()
           }}
         >
-          Change Modal Status
+          Close Modal
         </button>
       </dialog>
     </>

@@ -1,18 +1,34 @@
-@keyframes swipe {
+@keyframes slide-in {
   from {
     transform: translateX(300px);
   }
- /*  to {
+  /*  to {
     transform: translateX(0px);
   } */
 }
-
-.swiper {
-  animation: swipe 2s;
+@keyframes slide-out {
+  from {
+    display: block;
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+    transform: translateX(300px);
+  }
 }
 
+dialog.swiper {
+  display: none;
+  animation: slide-out 2s;
+}
+dialog.swiper[open] {
+  display: block;
+  animation: slide-in 2s;
+}
 
-dialog::backdrop {
+dialog.swiper::backdrop {
   pointer-events: none !important;
-  background-color:rgba(255, 0, 0, 0.298);
+  /* background-color:rgba(255, 0, 0, 0.298); */
 }
