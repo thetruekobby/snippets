@@ -27,6 +27,7 @@ import Test from "./Test"
 import NewWebRTC from "./pages/newWebRTC"
 import HookForm from "./pages/HookForm"
 import Portal from "./pages/Portal"
+import Generics from "./pages/Generics"
 
 export const routes = [
   { name: "/", component: <Home /> },
@@ -57,6 +58,7 @@ export const routes = [
   { name: "new webRTC", component: <NewWebRTC /> },
   { name: "React hook form", component: <HookForm /> },
   { name: "Portal", component: <Portal /> },
+  { name: "Generics", component: <Generics /> },
   { name: "test", component: <Test /> },
 ]
 
