@@ -28,9 +28,17 @@ import NewWebRTC from "./pages/newWebRTC"
 import HookForm from "./pages/HookForm"
 import Portal from "./pages/Portal"
 import Generics from "./pages/Generics"
+import { lazy, Suspense } from "react"
+// import CodeSplitting from "./pages/CodeSplitting"
+const CodeSplitting = lazy(() =>
+  new Promise((res) => {
+    setTimeout(res, 3000)
+  }).then(() => import("./pages/CodeSplitting"))
+)
+// const CodeSplitting = lazy(() => import("./pages/CodeSplitting"))
 
 export const routes = [
-  { name: "/", component: <Home /> },
+  { name: "/", component: <Home hasError /> },
   { name: "tab", component: <Tab /> },
   { name: "toggle-button", component: <Toggle /> },
   { name: "skeleton", component: <Skeleton /> },
@@ -59,6 +67,14 @@ export const routes = [
   { name: "React hook form", component: <HookForm /> },
   { name: "Portal", component: <Portal /> },
   { name: "Generics", component: <Generics /> },
+  {
+    name: "Code Splitting",
+    component: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <CodeSplitting />
+      </Suspense>
+    ),
+  },
   { name: "test", component: <Test /> },
 ]
 

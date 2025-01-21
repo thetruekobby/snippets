@@ -3,6 +3,7 @@ import { get } from "react-hook-form"
 class ErrorBoundary extends Component {
   state = {  hasError: false }
 
+  //used to update state when an error is caught
   static getDerivedStateFromError(error) {
     return { hasError: true }
   }
