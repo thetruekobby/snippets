@@ -27,9 +27,10 @@ export const validationSchema = Yup.object({
   age: Yup.number()
     .typeError("Age must be a number")
     .min(18, "You must be at least 18 years old")
-    .max(100, "You cannot be older than 100 years")
+    .max(100, "You cannot be older than 100 years") 
     .required("Age is required"),
   gender: Yup.string().required("Gender is required"),
   interests: Yup.array().min(1, "Select at least one interest").required("Select at least one interest"),
   birthDate: Yup.date().required("Date of birth is required"),
 })
+ 

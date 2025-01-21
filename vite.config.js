@@ -1,5 +1,6 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
+import ReactCompiler from "babel-plugin-react-compiler"
 // import { nodePolyfills } from "vite-plugin-node-polyfills"
 
 // https://vitejs.dev/config/
@@ -11,5 +12,9 @@ export default defineConfig({
   define: {
     global: {},
   },
-  plugins: [react() /* nodePolyfills() */],
+  plugins: [react({
+    babel: {
+      plugins:[ReactCompiler]
+    }
+  }) /* nodePolyfills() */],
 })
