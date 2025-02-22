@@ -12,5 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: delete any existing containers
+      run: docker rm -f snippets_container
     - name: Build the Docker image
-      run: docker-compose up -d 
+      run: docker build -t snippets .
+    - name: start container
+      run: docker run --name snippets_container -p 3001:3001 -d snippets
