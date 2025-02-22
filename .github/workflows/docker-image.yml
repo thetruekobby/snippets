@@ -8,7 +8,7 @@ jobs:
 
   build:
 
-    runs-on: [aws-ec2]
+    runs-on: [snippets-runner]
 
     steps:
     - uses: actions/checkout@v4
