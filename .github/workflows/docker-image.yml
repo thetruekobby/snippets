@@ -8,7 +8,7 @@ jobs:
 
   build:
 
-    runs-on: [snippets-runner]
+    runs-on: [self-hosted]
 
     steps:
     - uses: actions/checkout@v4
