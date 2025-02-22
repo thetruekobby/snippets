@@ -8,7 +8,11 @@ jobs:
 
   build:
 
-    runs-on: [self-hosted]
+    runs-on: ${{matrix.runners}}
+
+    strategy:
+        matrix:
+          runners: [self-hosted,aws-ec2]
 
     steps:
     - uses: actions/checkout@v4
