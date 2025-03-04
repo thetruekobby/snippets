@@ -10,11 +10,19 @@ export default defineConfig({
   },
   //the define block gets rid of the global is not defined error when using simple-peer with vite
   define: {
-    global: {},
+    // global: {},
+    global: "window",
   },
-  plugins: [react({
-    babel: {
-      plugins:[ReactCompiler]
-    }
-  }) /* nodePolyfills() */],
+  // resolve: {
+  //   alias: {
+  //     './window.js': './window.cjs',
+  //   }
+  // },
+  plugins: [
+    react({
+      babel: {
+        plugins: [ReactCompiler],
+      },
+    }) /* nodePolyfills() */,
+  ],
 })

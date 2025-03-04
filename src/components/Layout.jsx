@@ -1,12 +1,13 @@
 import { Link, Outlet, useLocation } from "react-router-dom"
 
 const Layout = () => {
-  const { pathname } = useLocation()
+  const pathname =""
+  // const { pathname } = useLocation()
   return (
     <>
       <h1
         className={`font-bold text-2xl my-5 border-b-2 px-5 ${
-          pathname.includes("parallax") && "absolute bottom-0"
+          pathname?.includes("parallax") && "absolute bottom-0"
         }`}
       >
         <Link to={"/"} className="cursor-pointer">

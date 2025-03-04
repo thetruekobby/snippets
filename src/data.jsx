@@ -29,7 +29,7 @@ import HookForm from "./pages/HookForm"
 import Portal from "./pages/Portal"
 import Generics from "./pages/Generics"
 import { lazy, Suspense } from "react"
-// import CodeSplitting from "./pages/CodeSplitting"
+import GraphQL from "./pages/GraphQL"
 const CodeSplitting = lazy(() =>
   new Promise((res) => {
     setTimeout(res, 3000)
@@ -67,6 +67,7 @@ export const routes = [
   { name: "React hook form", component: <HookForm /> },
   { name: "Portal", component: <Portal /> },
   { name: "Generics", component: <Generics /> },
+  { name: "GraphQL", component: <GraphQL /> },
   {
     name: "Code Splitting",
     component: (

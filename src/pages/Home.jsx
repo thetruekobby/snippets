@@ -27,7 +27,7 @@ const Home = () => {
     <main className="p-5">
       <h1 className="font-bold text-lg my-3">Pius&apos; Personal Snippets</h1>
       <p className="text-neutral-500 mb-5">Each button leads to the snippet is labels</p>
-      <div className="flex flex-wrap bg-gray-200 min-h-[300px] p-5 gap-3 content-start">
+      <div className="flex flex-wrap bg- min-h-[300px] p-5 gap-3 content-start">
         {routeLinks.map((routeLink, index) => (
           <Link key={index} to={routeLink} className="bg-slate-600 py-1 px-5 rounded text-white self-start">
             {routeLink}
