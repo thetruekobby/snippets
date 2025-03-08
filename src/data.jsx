@@ -30,6 +30,8 @@ import Portal from "./pages/Portal"
 import Generics from "./pages/Generics"
 import { lazy, Suspense } from "react"
 import GraphQL from "./pages/GraphQL"
+import Parent from "./pages/ParentChild/Parent"
+import DisplayUsers from "./pages/DisplayUsers/DisplayUsers"
 const CodeSplitting = lazy(() =>
   new Promise((res) => {
     setTimeout(res, 3000)
@@ -68,6 +70,8 @@ export const routes = [
   { name: "Portal", component: <Portal /> },
   { name: "Generics", component: <Generics /> },
   { name: "GraphQL", component: <GraphQL /> },
+  { name: "ParentChild", component: <Parent /> },
+  { name: "DisplayUsers", component: <DisplayUsers /> },
   {
     name: "Code Splitting",
     component: (
