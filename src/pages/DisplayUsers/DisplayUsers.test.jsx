@@ -1,5 +1,5 @@
 import React from "react"
-import { findAllByRole, findByTestId, render, screen } from "@testing-library/react"
+import {  findAllByRole, findByTestId, render, screen } from "@testing-library/react"
 import { describe, expect, test, vi } from "vitest"
 import DisplayUsers from "./DisplayUsers"
 import "@testing-library/jest-dom/vitest"
@@ -32,12 +32,10 @@ describe("Users", () => {
     render(<DisplayUsers />)
     const button = screen.getByRole("button", { name: /fetch/i })
     await userEvent.click(button)
-    // const loading = await screen.findByText(/loading/i)
-    // expect(loading).toBeInTheDocument()
     const users = await screen.findAllByRole("listitem")
     expect(users).toHaveLength(3)
   })
-  
+
   test("renders error", async () => {
     server.use(
       http.get("https://jsonplaceholder.typicode.com/users", () => {

@@ -188,9 +188,30 @@
 .parallax-wrapper header p {
   position: relative;
   z-index: 20;
-}
+}q
 /* End of parallax-scroll styles */
 
+
+
+/* table styling to be deleted */
+table {
+  @apply w-full
+  /* width: 100%;
+  border-collapse: collapse; */
+}
+
+table th:first-child {
+  /* width: 33.33%; */
+}
+
+table th:nth-child(2) {
+  /* width: 33.33%; */
+}
+
+table th:nth-child(3) {
+  /* width: 33.33%; */
+  @apply bg-red-500
+}
 
 
   

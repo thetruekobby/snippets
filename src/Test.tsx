@@ -12,7 +12,21 @@ const Test = () => {
       </button>
       <Child name={"Gideon"} />
       more changes commit 1 commit 2 commit 3 commit 4 commit 5
+      <Parent>
+        <Comp1 />
+        <Comp2 />
+      </Parent>
     </>
   )
 }
 export default Test
+
+const Parent = () => {
+  return <div>Comp1</div>
+}
+const Comp1 = () => {
+  return <div>Comp1</div>
+}
+const Comp2 = () => {
+  return <div>Comp2</div>
+}
